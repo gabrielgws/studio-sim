@@ -1,0 +1,38 @@
+form {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  input {
+    width: 300px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+
+    border: 0;
+    border-radius: 50px;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0EB0FD 0%, #10DF90 100%);
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}

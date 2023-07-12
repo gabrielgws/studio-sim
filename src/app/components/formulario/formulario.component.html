@@ -1,0 +1,8 @@
+<form (submit)="submitForm()">
+  <input type="text" id="name" name="name" [(ngModel)]="name" required placeholder="Digite o seu nome">
+  <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required placeholder="Digite o seu sobre Nome">
+  <input type="email" id="email" name="email" [(ngModel)]="email" required placeholder="Digite o seu email">
+  <input type="tel" id="phone" name="phone" [(ngModel)]="phone" required placeholder="Digite o seu telefone">
+
+  <button type="submit">Enviar</button>
+</form>
