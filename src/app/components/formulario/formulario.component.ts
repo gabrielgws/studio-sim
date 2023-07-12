@@ -6,24 +6,17 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./formulario.component.scss']
 })
 export class FormularioComponent {
-  public name: string;
-  public lastName: string;
-  public email: string;
-  public phone: string;
-
-  constructor(){
-    this.name = '';
-    this.lastName = '';
-    this.email = '';
-    this.phone = '';
-  }
+  name: string = '';
+  lastName: string = '';
+  email: string = '';
+  phone: string = '';
 
   submitForm() {
     const formData = {
-      name: this.name || '',
-      lastName: this.lastName  || '',
-      email: this.email  || '',
-      phone: this.phone  || '',
+      name: this.name,
+      lastName: this.lastName,
+      email: this.email,
+      phone: this.phone,
     };
 
     localStorage.setItem('formData', JSON.stringify(formData));
